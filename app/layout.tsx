@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${roboto.variable} ${montserrat.variable} h-ful antialiased`}>
       <body className="min-h-full flex flex-col">
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

@@ -3,13 +3,19 @@ import HomeSlider from "@/partials/HomeSlider";
 import Image from "next/image";
 import ClasessSlider from "@/partials/ClassesSlider";
 import InstructorsSlider from "@/partials/InstructorsSlider";
+import GalleryHome from "@/partials/GalleryHome";
+import ButtonCustom from "@/components/ButtomCustom";
+import Accordion from "@/components/Accordion";
 
 export default function Page() {
     return (
         <>
+            {/* Home */}
             <section className="min-h-150">
                 <HomeSlider />
             </section>
+
+            {/* About */}
             <section className="py-24">
                 <div className="container">
                     <SectionTitle title="Про нашу студію" color="black" />
@@ -43,6 +49,8 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+
+            {/* Clasess */}
             <section className="py-24 bg-section-bg">
                 <div className="container">
                     <div className="flex justify-center flex-col items-center">
@@ -52,6 +60,8 @@ export default function Page() {
                     <ClasessSlider />
                 </div>
             </section>
+
+            {/* Instructors */}
             <section className="py-24">
                 <div className="container">
                     <div className="flex justify-center flex-col items-center">
@@ -61,11 +71,30 @@ export default function Page() {
                     <InstructorsSlider />
                 </div>
             </section>
+
+            {/* Gallery */}
             <section className="py-24 bg-top-header">
                 <div className="container">
                     <div className="flex justify-center flex-col items-center">
                         <SectionTitle title="Галерея" color="white" />
                         <p className="text-white mt-3">Відображення моментів гармонії у нашій галереї</p>
+                    </div>
+                    <GalleryHome />
+                    <div className="flex justify-center mt-5">
+                        <ButtonCustom link="/" color="white" title="Дивитись усі" />
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="py-24">
+                <div className="container">
+                    <div className="flex justify-center flex-col items-center">
+                        <SectionTitle title="Часті питання" color="black" />
+                        <p className="mt-3">FAQ для легкості та ясності вашого йогічний досвід у студії Віньяса.</p>
+                    </div>
+                    <div className="mt-12 flex justify-center">
+                        <Accordion />
                     </div>
                 </div>
             </section>
