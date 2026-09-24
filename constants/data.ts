@@ -1,0 +1,40 @@
+export const navLinks = [
+    { id: 1, href: '/about', title: 'Про нас'},
+    { id: 2, href: '/instructors', title: 'Інструктори', drop: [
+        { href: '/instructors/ava-miler', title: 'Ава Милер' },
+        { href: '/instructors/ivan-smile', title: 'Іван Смайл' },
+        { href: '/instructors/sofia-mitchel', title: 'Софія Мітчел' },
+        { href: '/instructors/maxim-smith', title: 'Максим Сміт' },
+    ]},
+    { id: 3, href: '/classes', title: 'Класи', drop: [
+        { href: '/classes/ashtanga-yoga', title: 'Аштанга йога' },
+        { href: '/classes/bikram-yoga', title: 'Бікрам йога' },
+        { href: '/classes/kundalIni-yoga', title: 'Кундаліні йога' },
+        { href: '/classes/hatha-yoga', title: 'Хатха йога' },
+    ]},
+    { id: 4, href: '/gallery', title: 'Галерея'},
+    { id: 5, href: '/blog', title: 'Блог'},
+    { id: 6, href: '/contacts', title: 'Контакти'},
+]
+
+export const sliderDataHome = [
+    { title: 'Відкрийте для себе Гармонію у Студії Йоги Віньяса', desc: 'Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!', image: '/slide-1.jpg', href: '/about' },
+    { title: 'Відкрийте для себе Гармонію у Студії Йоги Віньяса', desc: 'Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!', image: '/slide-2.jpg', href: '/about' },
+    { title: 'Відкрийте для себе Гармонію у Студії Йоги Віньяса', desc: 'Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!', image: '/slide-3.jpg', href: '/about' },
+]
+
+export const classesData = [
+    { href: '/classes/ashtanga-yoga', title: 'Аштанга йога', image: '/classes-1.jpg' },
+    { href: '/classes/bikram-yoga', title: 'Бікрам йога', image: '/classes-2.jpg' },
+    { href: '/classes/kundalIni-yoga', title: 'Кундаліні йога', image: '/classes-3.jpg' },
+    { href: '/classes/hatha-yoga', title: 'Хатха йога', image: '/classes-4.jpg' },
+    { href: '/classes/bikram-yoga', title: 'Бікрам йога', image: '/classes-2.jpg' },
+]
+
+export const instructorsData = [
+    { name: 'Ава Милер', direction: 'Хатха йога', image: '/instructor-1.jpg', slug: 'ava-miler'},
+    { name: 'Иван Смайл', direction: 'Аштанга йога', image: '/instructor-2.jpg', slug: 'ivan-smile'},
+    { name: 'София Митчел', direction: 'Кундалини йога', image: '/instructor-3.jpg', slug: 'sofia-mitchel'},
+    { name: 'Максим Смит', direction: 'Бикрам йога', image: '/instructor-4.jpg', slug: 'maxim-smith'},
+    { name: 'Иван Смайл', direction: 'Аштанга йога', image: '/instructor-2.jpg', slug: 'ivan-smile' },
+]
