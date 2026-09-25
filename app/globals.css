@@ -115,3 +115,37 @@ body {
   object-fit: cover;
   cursor: pointer;
 }
+
+.img-main {
+  animation: moveUpDown 5s infinite;
+}
+
+.img-left {
+  animation: leftRight 5s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

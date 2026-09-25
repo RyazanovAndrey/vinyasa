@@ -15,9 +15,19 @@ export default function Page() {
     return (
         <>
             {/* Home */}
-            <section className="min-h-150">
-                <HomeSlider />
-            </section>
+            <div className="bg-gray-100 overflow-hidden">
+                <div className="container flex gap-x-12 min-h-180 items-center">
+                    <div className="space-y-8">
+                        <h1 className="text-5xl leading-14">Відкрийте для себе Гармонію у Студії Йоги <span className="font-bold">Віньяса</span></h1>
+                        <p>Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!</p>
+                        <ButtonCustom color="blue" title="Про студію" width="inline-block" />
+                    </div>
+                    <div className="self-end top-20">
+                        <Image src={'/lotus-main.png'} width={60} height={60} alt="" className="relative top-30 img-left" />
+                        <Image src={'/home-img-bg-2.png'} width={1400} height={1200} alt="" className="relative -bottom-20 img-main" />
+                    </div>
+                </div>
+            </div>
 
             {/* About */}
             <section className="py-24">
