@@ -50,8 +50,30 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className="grid place-items-center py-24">
-                <SectionVideo />
+            <section className="py-24">
+                <div className="container grid grid-cols-2 gap-x-12">
+                    <div className="">
+                        <SectionVideo />
+                    </div>
+                    <div className="">
+                        <h3 className="text-3xl font-bold mb-10">Віньяса-йога: Синхронізація дихання та руху</h3>
+                        <p className="text-section-content my-6 leading-8">Ласкаво просимо до практики Віньяса-флоу! У цьому відео на вас чекає динамічна послідовність асан, де кожен рух плавно перетікає в наступне на хвилі вашого дихання.</p>
+                        <p className="text-section-content my-6 leading-8">
+                            Цей комплекс допоможе вам: Зміцнити м'язовий корсет і поліпшити гнучкість. Звільнитися від ментальної напруги та стресу.
+                        </p>
+                        <p className="text-section-content my-6 leading-8">
+                            Практика підходить як для продовжуючих, так і для впевнених новачків, які готові рухатися в свідомому темпі. Постеліть килимок, налаштуйтеся на дихання та почнемо!
+                        </p>
+                    </div>
+                </div>
+                {/* <div className="container grid place-items-center ">
+                    <p className="heading-8">
+                        Віньяса – це медитація у русі. Включай це відео, щоб розім'яти тіло, розігнати енергію і скинути весь стрес, що накопичився через усвідомлене дихання. Кожна асана - це продовження твого вдиху і видиху. Рушайся плавно, відчувай силу свого тіла і насолоджуйся моментом «тут і зараз». Погнали?
+                    </p>
+                </div>
+                <div className="">
+                    <SectionVideo />
+                </div> */}
             </section>
             <SectionClasess />
             <SectionInstructors />

@@ -20,9 +20,35 @@ body {
   color: var(--color-text);
 }
 
-.container {
+/* .container {
   margin-inline: auto;
   padding-inline: 0.75rem;
+} */
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+
+  @media(width >=576px) {
+    max-width: 540px;
+  }
+
+  @media(width >=768px) {
+    max-width: 720px;
+  }
+
+  @media(width >=992px) {
+    max-width: 960px;
+  }
+
+  @media(width >=1200px) {
+    max-width: 1140px;
+  }
+
+  @media(width >=1400px) {
+    max-width: 1320px;
+  }
 }
 
 .swiper-navigation-icon,
@@ -33,7 +59,7 @@ body {
 .grid-gallery-home {
   margin-top: 50px;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     'image-1 image-2 image-3 image-4'
     'image-1 image-6 image-3 image-7'
     'image-5 image-6 image-8 image-8'
@@ -43,14 +69,45 @@ body {
   gap: 20px;
 }
 
-.image-1 { grid-area: image-1; overflow: hidden; }
-.image-2 { grid-area: image-2; overflow: hidden; }
-.image-3 { grid-area: image-3; overflow: hidden; }
-.image-4 { grid-area: image-4; overflow: hidden; }
-.image-5 { grid-area: image-5; overflow: hidden; }
-.image-6 { grid-area: image-6; overflow: hidden; }
-.image-7 { grid-area: image-7; overflow: hidden; }
-.image-8 { grid-area: image-8; overflow: hidden; }
+.image-1 {
+  grid-area: image-1;
+  overflow: hidden;
+}
+
+.image-2 {
+  grid-area: image-2;
+  overflow: hidden;
+}
+
+.image-3 {
+  grid-area: image-3;
+  overflow: hidden;
+}
+
+.image-4 {
+  grid-area: image-4;
+  overflow: hidden;
+}
+
+.image-5 {
+  grid-area: image-5;
+  overflow: hidden;
+}
+
+.image-6 {
+  grid-area: image-6;
+  overflow: hidden;
+}
+
+.image-7 {
+  grid-area: image-7;
+  overflow: hidden;
+}
+
+.image-8 {
+  grid-area: image-8;
+  overflow: hidden;
+}
 
 .img-home {
   width: 100%;

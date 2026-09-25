@@ -40,7 +40,6 @@ export const instructorsData = [
     { name: 'Иван Смайл', direction: 'Аштанга йога', image: '/instructor-2.jpg', slug: 'ivan-smile' },
     { name: 'София Митчел', direction: 'Кундалини йога', image: '/instructor-3.jpg', slug: 'sofia-mitchel' },
     { name: 'Максим Смит', direction: 'Бикрам йога', image: '/instructor-4.jpg', slug: 'maxim-smith' },
-    { name: 'Иван Смайл', direction: 'Аштанга йога', image: '/instructor-2.jpg', slug: 'ivan-smile' },
 ]
 
 export const faqList = [
