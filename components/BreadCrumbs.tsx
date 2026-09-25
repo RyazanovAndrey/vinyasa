@@ -3,10 +3,13 @@
 import { RiArrowRightSLine } from "@remixicon/react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { breadCrumbsList } from "@/constants/breadCrumbsList"
 
 const BreadCrumbs = () => {
 
   const path = usePathname()
+
+  console.log(path)
 
   function createBreadCrumbs(path: string) {
     const list = path.split('/').filter(item => item)
@@ -18,7 +21,7 @@ const BreadCrumbs = () => {
     let hrefLink = ''
 
     for (let index = 0; index < list.length; index++) {
-      const title = translateList(list[index]);
+      const title = breadCrumbsList(list[index]);
       hrefLink = hrefLink + `/${list[index]}`
 
       breadCrumbs.push({
@@ -27,14 +30,6 @@ const BreadCrumbs = () => {
     }
 
     return breadCrumbs
-  }
-
-  function translateList(value: string){
-    const list: Record<string, string> = {
-      'about': 'О нас'
-    }
-
-    return list[value]
   }
 
   const breadCrumbs = createBreadCrumbs(path)

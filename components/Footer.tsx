@@ -32,7 +32,7 @@ const Footer = () => {
           <span className='flex items-center gap-x-3 mt-5'><RiMailLine size={24} />vinyasa@gmail.com</span>
         </div>
       </div>
-      <div className="container text-center py-5 text-sm text-[#D4D4D4] border-t">
+      <div className="container text-center py-5 text-sm text-[#D4D4D4] border-t border-white/10">
         <span>&copy;</span> {new Date().getFullYear()} Усі права збережені
       </div>
     </footer>

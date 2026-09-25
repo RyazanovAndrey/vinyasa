@@ -7,12 +7,12 @@ interface Props {
 
 const SectionTitle = ({ title, color }: Props) => {
 
-  const colorTitle = () => {
-    if (color == 'black') return 'text-black'
-    if (color == 'white') return 'text-white'
+  const colorTitle = {
+    'black': 'text-black',
+    'white': 'text-white'
   }
 
-  const currentCollor = colorTitle()
+  const currentCollor = colorTitle[color] || ''
 
   return (
     <div className="flex items-center gap-x-5">

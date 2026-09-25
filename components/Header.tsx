@@ -2,8 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import NavMenu from './NavMenu';
 import { RiMailLine, RiMapPinLine, RiPhoneLine, RiTimeLine } from '@remixicon/react';
-import ButtomCustom from './ButtomCustom';
-import ButtonCustom from './ButtomCustom';
+import ButtonCustom from './ButtonCustom';
 
 const Header = () => {
   return (
@@ -30,7 +29,7 @@ const Header = () => {
             </Link>
             <NavMenu />
           </div>
-          <ButtonCustom link="/" color="blue" title="Записатись" />
+          <ButtonCustom link="/" color="blue" title="Записатись" width='inline-block' />
         </div>
       </div>
     </header>

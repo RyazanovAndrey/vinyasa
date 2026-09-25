@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
+import Image from 'next/image';
 
 const images = [
   '/gallery/gallery-1.jpg',
@@ -31,7 +32,7 @@ function GalleryHome() {
       <div className='grid-gallery-home'>
         {images.map((item, index) => (
           <div className={`image-${index + 1}`}>
-            <img src={item} onClick={() => openLightboxOnSlide(index + 1)} className="img-home" />
+            <Image src={item} alt='' onClick={() => openLightboxOnSlide(index + 1)} className='img-home' width={500} height={500} />
           </div>
         ))}
       </div>

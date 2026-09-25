@@ -37,7 +37,7 @@ const NavMenu = () => {
               <span onClick={() => toggleMenu(item.id)} className='py-4 px-6 cursor-pointer inline-flex items-center gap-x-2 text-gray-400 hover:text-gray-700 duration-200'>{item.title}{isOpen == item.id ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}</span>
               <ul className={`absolute left-0 bg-white min-w-48 overflow-hidden z-50 shadow-2xl duration-200 ${isOpen == item.id ? 'opacity-100 visible top-[110%]' : 'opacity-0 invisible top-[120%]'}`}>
                 {item.drop.map(item => {
-                  return <li><Link href={item.href} className='block p-3 hover:bg-gray-200'>{item.title}</Link></li>
+                  return <li><Link href={item.href} onClick={() => setIsOpen(null)} className='block p-3 hover:bg-gray-200'>{item.title}</Link></li>
                 })}
               </ul>
             </li>
