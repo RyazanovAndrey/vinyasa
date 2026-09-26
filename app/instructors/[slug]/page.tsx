@@ -11,11 +11,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
     if(!findData) return
 
-    console.log(findData)
-
     return (
         <>
-            <section className="bg-primary text-center p-5 text-white space-y-2 ">
+            <section className="bg-primary text-center py-5 text-white space-y-2 ">
                 <h3 className="text-4xl">{findData.name}</h3>
                 <BreadCrumbs />
             </section>

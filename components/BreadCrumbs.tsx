@@ -35,7 +35,7 @@ const BreadCrumbs = () => {
   const breadCrumbs = createBreadCrumbs(path)
 
   return (
-    <div className="flex justify-center gap-x-3 mt-2">
+    <div className="flex gap-x-3 mb-5 justify-center">
       {breadCrumbs.map((item, index) => (
         <div className="flex items-center gap-x-3">
           {index > 0 && <RiArrowRightSLine size={16} />}

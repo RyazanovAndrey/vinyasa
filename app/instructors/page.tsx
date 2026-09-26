@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <section className="bg-primary text-center p-5 text-white space-y-2 ">
+            <section className="bg-primary text-center py-12 text-white space-y-2 ">
                 <h3 className="text-4xl">Ава Мілер</h3>
                 <BreadCrumbs />
             </section>
-            <section className="p-24">
+            <section className="py-24">
                 <div className="container grid grid-cols-2 gap-x-12 items-center">
                     <div className="">
                         <Image src={'/instructors/instructors.jpg'} width={500} height={500} alt="" />
