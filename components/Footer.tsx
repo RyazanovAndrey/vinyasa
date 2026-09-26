@@ -22,7 +22,7 @@ const Footer = () => {
         <div>
           <div className="text-xl mb-5">Класи</div>
           {classesData.map(item => {
-            return <Link href={item.href} className="block text-[#7c7c7c] py-1 hover:text-white duration-200">{item.title}</Link>
+            return <Link href={item.slug} className="block text-[#7c7c7c] py-1 hover:text-white duration-200">{item.title}</Link>
           })}
         </div>
         <div>

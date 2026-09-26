@@ -1,9 +1,9 @@
 import BreadCrumbs from "@/components/BreadCrumbs"
 import SectionInstructors from "@/partials/SectionInstructors"
 import { RiBubbleChartLine, RiInstagramLine, RiMailLine, RiPhoneLine, RiTelegram2Line, RiTwitterLine } from "@remixicon/react"
-import Image from "next/image"
 import { instructorsData } from "@/constants/data"
 import Link from "next/link"
+import SectionContacts from "@/partials/SectionContacts"
 
 export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
     const { slug } = await params
@@ -20,8 +20,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     const { slug } = await params
     const findData = instructorsData.find(item => item.slug == slug)
 
-    console.log(findData?.contacts.socials[0])
-
     if (!findData) return
 
     return (
@@ -31,13 +29,16 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                     <BreadCrumbs />
                     <div className="grid grid-cols-2 gap-x-12">
                         <div className="">
-                            <Image src={`/instructors/${findData.slug}.jpg`} width={500} height={500} alt="" />
+                            <div className="w-125 h-150">
+                                <img src={`/instructors/${findData.slug}.jpg`} className="w-full h-full object-cover" alt="" />
+                            </div>
                         </div>
                         <div className="">
                             <h3 className="text-3xl font-bold">{findData.name}</h3>
-                            <p className="leading-8 text-section-content my-8">Вітаю. Мене звуть Ава Міллер, та інструктор йоги з Хатха Йоги. </p>
+                            <p className="leading-8 text-section-content my-8">Вітаю. Мене звуть {findData.name}, я інструктор йоги з {findData.direction}. </p>
                             <p className="my-8 leading-8 text-section-content">Моя любов до йоги почалася як особисте відкриття і стала невід'ємною частиною мого життя. З кожним уроком я прагну ділитися не тільки фізичними аспектами йоги, але й допомагати вам набути внутрішнього спокою та рівноваги.</p>
                             <p className="my-8 leading-8 text-section-content">Моє навчання в різних школах йоги та постійне самовдосконалення дозволяють мені створювати уроки, наповнені енергією, розумінням та підтримкою. Моя філософія - в тому, щоб допомогти вам виявити свою силу, гнучкість та внутрішнє світло.</p>
+                            <div className="border border-gray-300 p-5 inline-block">Направлення: <span className="font-semibold">{findData.direction}</span></div>
                         </div>
                     </div>
                 </div>
@@ -72,6 +73,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 </div>
             </section>
             <SectionInstructors />
+            <SectionContacts />
         </>
     )
 }

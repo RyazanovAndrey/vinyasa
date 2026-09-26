@@ -6,7 +6,7 @@ import ButtonCustom from './ButtonCustom';
 
 const Header = () => {
   return (
-    <header className="fixed w-full top-0 left-0 z-50 bg-white border-b border-gray-200">
+    <header className="fixed w-full top-0 left-0 z-999 bg-white border-b border-gray-200">
 
       <div className="bg-top-header text-white py-2">
         <div className="container flex items-center justify-between text-sm">

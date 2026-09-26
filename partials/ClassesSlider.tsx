@@ -11,6 +11,7 @@ import 'swiper/css/scrollbar';
 
 import '../app/globals.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ClasessSlider = () => {
   return (
@@ -24,8 +25,8 @@ const ClasessSlider = () => {
     >
       {classesData.map(item => (
         <SwiperSlide>
-          <Link href={item.href} className='bg-white cursor-pointer overflow-hidden block'>
-            <img src={item.image} alt="" className="w-full" />
+          <Link href={`/classes/${item.slug}`} className='bg-white cursor-pointer overflow-hidden block'>
+            <Image src={item.image} width={500} height={500} alt='' />
             <div className="text-center my-6 font-semibold">{item.title}</div>
           </Link>
         </SwiperSlide>
