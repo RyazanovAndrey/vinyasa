@@ -13,20 +13,19 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <section className="bg-primary text-center p-5 text-white space-y-2 ">
-                <h3 className="text-4xl">О нас</h3>
-                <BreadCrumbs />
-            </section>
-            <section className="p-24">
-                <div className="container grid grid-cols-2 gap-x-5 items-center">
-                    <div className="">
-                        <h3 className="text-3xl font-bold mb-10">Йога студія Віньяса</h3>
-                        <p className="text-section-content leading-8">Ласкаво просимо до студії "Віньяса" – місце, де зливаються елегантність руху та глибока усвідомленість. Наша студія пропонує унікальний простір для тих, хто прагне гармонії тіла та розуму через мистецтво йоги.</p>
-                        <p className="text-section-content my-8 leading-8">Віньяса - це не просто заняття йогою, це занурення у захоплюючий світ власного тіла, дихання та душі. Наші класи надають можливість кожному учню відкрити для себе свій унікальний шлях до благополуччя та внутрішньої рівноваги.</p>
-                        <ButtonCustom color="blue" title="Дивитись відео" width="inline-block" />
-                    </div>
-                    <div className="flex justify-end">
-                        <Image src={'/about-1.jpg'} width={400} height={500} alt="" />
+            <section className="py-36">
+                <div className="container">
+                    <BreadCrumbs />
+                    <div className="grid grid-cols-2 gap-x-5 items-center">
+                        <div className="">
+                            <h3 className="text-3xl font-bold mb-10">Йога студія Віньяса</h3>
+                            <p className="text-section-content leading-8">Ласкаво просимо до студії "Віньяса" – місце, де зливаються елегантність руху та глибока усвідомленість. Наша студія пропонує унікальний простір для тих, хто прагне гармонії тіла та розуму через мистецтво йоги.</p>
+                            <p className="text-section-content my-8 leading-8">Віньяса - це не просто заняття йогою, це занурення у захоплюючий світ власного тіла, дихання та душі. Наші класи надають можливість кожному учню відкрити для себе свій унікальний шлях до благополуччя та внутрішньої рівноваги.</p>
+                            <ButtonCustom color="blue" title="Дивитись відео" width="inline-block" />
+                        </div>
+                        <div className="flex justify-end">
+                            <Image src={'/about-1.jpg'} width={400} height={500} alt="" />
+                        </div>
                     </div>
                 </div>
             </section>

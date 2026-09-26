@@ -9,8 +9,6 @@ const BreadCrumbs = () => {
 
   const path = usePathname()
 
-  console.log(path)
-
   function createBreadCrumbs(path: string) {
     const list = path.split('/').filter(item => item)
 
@@ -35,11 +33,11 @@ const BreadCrumbs = () => {
   const breadCrumbs = createBreadCrumbs(path)
 
   return (
-    <div className="flex gap-x-3 mb-5 justify-center">
+    <div className="flex gap-x-3 mb-5">
       {breadCrumbs.map((item, index) => (
         <div className="flex items-center gap-x-3">
           {index > 0 && <RiArrowRightSLine size={16} />}
-          {index == breadCrumbs.length - 1 ? <span className="text-white/30">{item.title}</span> : <Link href={item.href}>{item.title}</Link>}
+          {index == breadCrumbs.length - 1 ? <span className="">{item.title}</span> : <Link href={item.href} className="text-gray-400">{item.title}</Link>}
         </div>
       ))}
     </div>

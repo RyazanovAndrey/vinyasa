@@ -6,6 +6,7 @@ export const navLinks = [
             { href: '/instructors/ivan-smile', title: 'Іван Смайл' },
             { href: '/instructors/sofia-mitchel', title: 'Софія Мітчел' },
             { href: '/instructors/maxim-smith', title: 'Максим Сміт' },
+            { href: '/instructors/tatyana-yuhno', title: 'Тетяна Юхно' },
         ]
     },
     {
@@ -21,12 +22,6 @@ export const navLinks = [
     { id: 6, href: '/contacts', title: 'Контакти' },
 ]
 
-export const sliderDataHome = [
-    { title: 'Відкрийте для себе Гармонію у Студії Йоги Віньяса', desc: 'Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!', image: '/slide-1.jpg', href: '/about' },
-    { title: 'Відкрийте для себе Гармонію у Студії Йоги Віньяса', desc: 'Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!', image: '/slide-2.jpg', href: '/about' },
-    { title: 'Відкрийте для себе Гармонію у Студії Йоги Віньяса', desc: 'Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!', image: '/slide-3.jpg', href: '/about' },
-]
-
 export const classesData = [
     { href: '/classes/ashtanga-yoga', title: 'Аштанга йога', image: '/classes-1.jpg' },
     { href: '/classes/bikram-yoga', title: 'Бікрам йога', image: '/classes-2.jpg' },
@@ -35,11 +30,32 @@ export const classesData = [
     { href: '/classes/bikram-yoga', title: 'Бікрам йога', image: '/classes-2.jpg' },
 ]
 
+// Картинка формируется /instructors/[slug].jpg
+// Например /instructors/ava-miler.jpg
+
 export const instructorsData = [
-    { name: 'Ава Милер', direction: 'Хатха йога', image: '/instructor-1.jpg', slug: 'ava-miler' },
-    { name: 'Иван Смайл', direction: 'Аштанга йога', image: '/instructor-2.jpg', slug: 'ivan-smile' },
-    { name: 'София Митчел', direction: 'Кундалини йога', image: '/instructor-3.jpg', slug: 'sofia-mitchel' },
-    { name: 'Максим Смит', direction: 'Бикрам йога', image: '/instructor-4.jpg', slug: 'maxim-smith' },
+    {
+        name: 'Ава Милер', direction: 'Хатха йога', slug: 'ava-miler', contacts: {
+            tel: '+38 066 196-56-44', email: 'avamiler@gmail.com', socials: ['tel', 'inst', 'twit']
+        }
+    },
+    {
+        name: 'Иван Смайл', direction: 'Аштанга йога', slug: 'ivan-smile', contacts: {
+            tel: '+38 066 196-56-44', email: 'avamiler@gmail.com', socials: ['tel', 'inst', 'twit']
+        }
+    },
+    {
+        name: 'София Митчел', direction: 'Кундалини йога', slug: 'sofia-mitchel', contacts: {
+            tel: '+38 066 196-56-44', email: 'avamiler@gmail.com', socials: ['tel', 'inst', 'twit']
+        } },
+    {
+        name: 'Максим Смит', direction: 'Бикрам йога', slug: 'maxim-smith', contacts: {
+            tel: '+38 066 196-56-44', email: 'avamiler@gmail.com', socials: ['tel', 'inst', 'twit']
+        } },
+    {
+        name: 'Тетяна Юхно', direction: 'Бикрам йога', slug: 'tatyana-yuhno', contacts: {
+            tel: '+38 066 196-56-44', email: 'avamiler@gmail.com', socials: ['tel', 'inst', 'twit']
+        } },
 ]
 
 export const faqList = [
