@@ -1,7 +1,16 @@
+import BreadCrumbs from "@/components/BreadCrumbs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Блог'
+};
+
 export default function Page() {
     return (
-        <div className="">
-            Page
-        </div>
+        <section className="py-36">
+            <div className="container">
+                <BreadCrumbs />
+            </div>
+        </section>
     )
 }

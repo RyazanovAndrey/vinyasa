@@ -1,16 +1,13 @@
 import SectionTitle from "@/components/SectionTitle";
-import HomeSlider from "@/partials/HomeSlider";
 import Image from "next/image";
-import ClasessSlider from "@/partials/ClassesSlider";
-import InstructorsSlider from "@/partials/InstructorsSlider";
 import GalleryHome from "@/partials/GalleryHome";
 import ButtonCustom from "@/components/ButtonCustom";
 import Accordion from "@/components/Accordion";
 import ReviewsSection from "@/partials/ReviewsSection";
-import { RiMailLine, RiMapPinLine, RiPhoneLine } from "@remixicon/react";
 import SectionClasess from "@/partials/SectionClasess";
 import SectionInstructors from "@/partials/SectionInstructors";
 import SectionContacts from "@/partials/SectionContacts";
+import ButtonUp from "@/components/ButtonUp";
 
 export default function Page() {
     return (

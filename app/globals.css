@@ -11,6 +11,10 @@
   --corner-size: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style-type: none;
 }

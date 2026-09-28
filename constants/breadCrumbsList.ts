@@ -11,7 +11,8 @@ export function breadCrumbsList(value: string) {
         'ashtanga-yoga': 'Аштанга йога',
         'bikram-yoga': 'Бікрам йога',
         'kundalIni-yoga': 'Кундаліні йога',
-        'hatha-yoga': 'Хатха йога'
+        'hatha-yoga': 'Хатха йога',
+        'blog': 'Блог'
     }
 
     return list[value]

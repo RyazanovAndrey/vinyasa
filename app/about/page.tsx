@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: 'О нас | Віньяса-йога, заняття для початківців'
+    title: 'О нас'
 };
 
 export default function Page() {
