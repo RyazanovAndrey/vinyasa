@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#333743] pt-12 text-white">
-      <div className="container grid grid-cols-4 gap-12 pb-5">
+      <div className="container grid grid-cols-2 md:grid-cols-4 gap-12 pb-5">
         <div className="">
           <Image src={'/logo-footer.png'} width={150} height={40} alt="" />
           <p className="text-sm text-[#7c7c7c] mt-5">Знайдіть гармонію тіла і розуму в студії йоги Віньяса. Досліджуйте шлях до внутрішньої рівноваги через уроки йоги, спрямовані на гармонійне поєднання дихання, рух і розвиток душі.</p>

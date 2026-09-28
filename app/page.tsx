@@ -19,7 +19,7 @@ export default function Page() {
             <section className="py-24">
                 <div className="container">
                     <SectionTitle title="Про нашу студію" color="black" />
-                    <div className="grid grid-cols-2 gap-5 mt-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12">
                         <div className="">
                             <p className="text-section-content">Ласкаво просимо до студії "Віньяса" – місце, де зливаються елегантність руху та глибока усвідомленість. Наша студія пропонує унікальний простір для тих, хто прагне гармонії тіла та розуму через мистецтво йоги.</p>
                             <p className="text-section-content mt-7">Віньяса - це не просто заняття йогою, це занурення у захоплюючий світ власного тіла, дихання та душі. Наші класи надають можливість кожному учню відкрити для себе свій унікальний шлях до благополуччя та внутрішньої рівноваги.</p>
@@ -90,7 +90,7 @@ export default function Page() {
                         <SectionTitle title="Відгуки" color="black" />
                         <p className="mt-3">Відгуки та враження наших учнів про студію Віньяса</p>
                     </div>
-                    <div className="grid grid-cols-4 gap-5 mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-12">
                         <ReviewsSection />
                     </div>
                 </div>

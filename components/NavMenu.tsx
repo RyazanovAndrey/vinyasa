@@ -29,7 +29,7 @@ const NavMenu = () => {
   }, [])
 
   return (
-    <div className="flex items-center">
+    <div className="items-center hidden lg:flex">
       {navLinks.map(item => (
         item.drop ? (
           <>

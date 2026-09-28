@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import NavMenu from './NavMenu';
-import { RiMailLine, RiMapPinLine, RiPhoneLine, RiTimeLine } from '@remixicon/react';
+import { RiMailLine, RiMapPinLine, RiMenuLine, RiPhoneLine, RiTimeLine } from '@remixicon/react';
 import ButtonCustom from './ButtonCustom';
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
     <header className="fixed w-full top-0 left-0 z-999 bg-white border-b border-gray-200">
 
       <div className="bg-top-header text-white py-2">
-        <div className="container flex items-center justify-between text-sm">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 items-center justify-between text-sm gap-2">
           <div className="flex gap-x-5">
             <span className='flex items-center gap-x-3'><RiTimeLine size={16} />Пн-Пт з 10:00 до 19:00</span>
             <span className='flex items-center gap-x-3'><RiMailLine size={16} />vinyasa@gmail.com</span>
@@ -29,6 +29,7 @@ const Header = () => {
             </Link>
             <NavMenu />
           </div>
+          <div className="bg-primary p-2 rounded-bdrs-8px lg:hidden"><RiMenuLine color='white' /></div>
           <ButtonCustom link="/" color="blue" title="Записатись" width='inline-block' />
         </div>
       </div>

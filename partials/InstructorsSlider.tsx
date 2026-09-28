@@ -10,17 +10,27 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import '../app/globals.css';
-import Image from 'next/image';
 
 const InstructorsSlider = () => {
   return (
     <Swiper
       modules={[Navigation]}
       spaceBetween={20}
-      slidesPerView={4}
+      slidesPerView={1.5}
       navigation
       loop
       className='mt-12'
+      breakpoints={{
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        },
+        1100: {
+          slidesPerView: 4
+        }
+      }}
     >
       {instructorsData.map(item => (
         <SwiperSlide>

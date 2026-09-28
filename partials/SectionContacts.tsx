@@ -5,7 +5,7 @@ import { RiMailLine, RiMapPinLine, RiPhoneLine } from "@remixicon/react"
 const SectionContacts = () => {
   return (
     <section className="" style={{ background: 'url("/contacts-img.jpg")' }}>
-      <div className="container bg-[#3D445D]/60 grid grid-cols-2 gap-12 p-12">
+      <div className="container bg-[#3D445D]/60 grid grid-cols-1 md:grid-cols-2 gap-12 p-12">
         <div className="flex flex-col items-center">
           <SectionTitle color="white" title="Залишити заявку" />
           <p className="mt-3 text-white">Залишились питання? Заповніть форму,</p>
