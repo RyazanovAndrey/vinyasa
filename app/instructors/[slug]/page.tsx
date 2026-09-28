@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                     <div className="grid grid-cols-2 gap-x-12">
                         <div className="">
                             <div className="w-125 h-150">
-                                <img src={`/instructors/${findData.slug}.jpg`} className="w-full h-full object-cover" alt="" />
+                                <img src={`/instructors/${findData.slug}.jpg`} className="w-full h-full object-cover rounded-bdrs-8px" alt="" />
                             </div>
                         </div>
                         <div className="">
@@ -38,24 +38,24 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                             <p className="leading-8 text-section-content my-8">Вітаю. Мене звуть {findData.name}, я інструктор йоги з {findData.direction}. </p>
                             <p className="my-8 leading-8 text-section-content">Моя любов до йоги почалася як особисте відкриття і стала невід'ємною частиною мого життя. З кожним уроком я прагну ділитися не тільки фізичними аспектами йоги, але й допомагати вам набути внутрішнього спокою та рівноваги.</p>
                             <p className="my-8 leading-8 text-section-content">Моє навчання в різних школах йоги та постійне самовдосконалення дозволяють мені створювати уроки, наповнені енергією, розумінням та підтримкою. Моя філософія - в тому, щоб допомогти вам виявити свою силу, гнучкість та внутрішнє світло.</p>
-                            <div className="border border-gray-300 p-5 inline-block">Направлення: <span className="font-semibold">{findData.direction}</span></div>
+                            <div className="border border-gray-300 p-5 inline-block  rounded-bdrs-8px">Направлення: <span className="font-semibold">{findData.direction}</span></div>
                         </div>
                     </div>
                 </div>
             </section>
             <section className="bg-top-header text-white p-24">
                 <div className="container grid grid-cols-3 gap-x-5">
-                    <div className="border p-5 grid place-items-center">
+                    <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiPhoneLine size={48} />
                         <span className="font-light mt-5">Телефон</span>
                         <span className="font-bold text-2xl">{findData.contacts.tel}</span>
                     </div>
-                    <div className="border p-5 grid place-items-center">
+                    <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiMailLine size={48} />
                         <span className="font-light mt-5">Email</span>
                         <span className="font-bold text-2xl">{findData.contacts.email}</span>
                     </div>
-                    <div className="border p-5 grid place-items-center">
+                    <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiBubbleChartLine size={48} />
                         <span className="font-light mt-5">Соціальні мережі</span>
                         <div className="flex gap-x-5 font-bold text-2xl">

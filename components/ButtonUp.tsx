@@ -24,7 +24,7 @@ const ButtonUp = () => {
   }, [])
 
   return (
-    <a href="#" className={`fixed right-4 bottom-4 w-12 h-12 grid place-items-center rounded-full bg-primary ${isShow ? 'block' : 'hidden'}`}>
+    <a href="#" className={`fixed right-4 bottom-4 w-12 h-12 grid place-items-center rounded-full bg-primary duration-200 ${isShow ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
       <RiArrowUpSLine color="white" />
     </a>
   )

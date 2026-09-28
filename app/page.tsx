@@ -7,25 +7,13 @@ import ReviewsSection from "@/partials/ReviewsSection";
 import SectionClasess from "@/partials/SectionClasess";
 import SectionInstructors from "@/partials/SectionInstructors";
 import SectionContacts from "@/partials/SectionContacts";
-import ButtonUp from "@/components/ButtonUp";
+import HomeSlider from "@/partials/HomeSlider";
 
 export default function Page() {
     return (
         <>
             {/* Home */}
-            <div className="bg-gray-100 overflow-hidden">
-                <div className="container flex gap-x-12 min-h-180 items-center">
-                    <div className="space-y-8">
-                        <h1 className="text-5xl leading-14">Відкрийте для себе Гармонію у Студії Йоги <span className="font-bold">Віньяса</span></h1>
-                        <p>Заснований ще 2005 року, коли слово «йога» ще не знаходило такого відгуку у публіки, як зараз. Тепер ми найбільше і найкраще місце для занять йогою в радіусі 100 миль!</p>
-                        <ButtonCustom color="blue" title="Про студію" width="inline-block" />
-                    </div>
-                    <div className="self-end top-20">
-                        <Image src={'/lotus-main.png'} width={60} height={60} alt="" className="relative top-30 img-left" />
-                        <Image src={'/home-img-bg-2.png'} width={1400} height={1200} alt="" className="relative -bottom-20 img-main" />
-                    </div>
-                </div>
-            </div>
+            <HomeSlider />
 
             {/* About */}
             <section className="py-24">
@@ -35,7 +23,7 @@ export default function Page() {
                         <div className="">
                             <p className="text-section-content">Ласкаво просимо до студії "Віньяса" – місце, де зливаються елегантність руху та глибока усвідомленість. Наша студія пропонує унікальний простір для тих, хто прагне гармонії тіла та розуму через мистецтво йоги.</p>
                             <p className="text-section-content mt-7">Віньяса - це не просто заняття йогою, це занурення у захоплюючий світ власного тіла, дихання та душі. Наші класи надають можливість кожному учню відкрити для себе свій унікальний шлях до благополуччя та внутрішньої рівноваги.</p>
-                            <div className="bg-top-header text-white grid grid-cols-2 p-12 gap-y-12 mt-12">
+                            <div className="bg-top-header text-white grid grid-cols-2 p-12 gap-y-12 mt-12 rounded-bdrs-8px">
                                 <div className="text-center">
                                     <div className="text-6xl font-bold">20</div>
                                     <div className="">Років досвіду</div>
@@ -55,8 +43,8 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="relative flex justify-end">
-                            <img src="/about-1.jpg" alt="" />
-                            <Image className="absolute -bottom-12 left-0 z-50 border-12 border-white" src={'/about-2.jpg'} width={375} height={315} alt="" />
+                            <img src="/about-1.jpg" alt="" className="rounded-bdrs-8px" />
+                            <Image className="absolute -bottom-12 left-0 z-50 border-12 border-white rounded-bdrs-8px" src={'/about-2.jpg'} width={375} height={315} alt="" />
                         </div>
                     </div>
                 </div>
@@ -77,7 +65,7 @@ export default function Page() {
                     </div>
                     <GalleryHome />
                     <div className="flex justify-center mt-5">
-                        <ButtonCustom link="/" color="white" title="Дивитись усі" width="inline-block" />
+                        <ButtonCustom link="/gallery" color="white" title="Дивитись усі" width="inline-block" />
                     </div>
                 </div>
             </section>

@@ -5,7 +5,7 @@ const ReviewsSection = () => {
   return (
     <>
       {reviewsData.map(item => (
-        <div className="bg-white cursor-pointer">
+        <div className="bg-white cursor-pointer rounded-bdrs-8px overflow-hidden">
           <Image src={item.image} width={500} height={500} alt="" className="w-full" />
           <div className="py-5 px-12 text-center">
             <div className="font-semibold pb-3">{item.name}</div>

@@ -12,7 +12,12 @@ export function breadCrumbsList(value: string) {
         'bikram-yoga': 'Бікрам йога',
         'kundalIni-yoga': 'Кундаліні йога',
         'hatha-yoga': 'Хатха йога',
-        'blog': 'Блог'
+        'blog': 'Блог',
+        'all': 'Всі',
+        'fitness': 'Фітнес',
+        'vinyasa': 'Віньяса',
+        'asanyi': 'Асани',
+        'gallery' : 'Галерея'
     }
 
     return list[value]

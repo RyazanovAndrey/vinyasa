@@ -19,13 +19,13 @@ export const navLinks = [
         ]
     },
     { id: 4, href: '/gallery', title: 'Галерея' },
-    { id: 5, href: '/blog', title: 'Блог' },
+    { id: 5, href: '/blog/all', title: 'Блог' },
 ]
 
 export const sliderDataHome =  [
-    { image: '/slider/slider-1.jpg', title: 'Hellow 1', desc: '', href: '' },
-    { image: '/slider/slider-2.jpg', title: 'Hellow 2', desc: '', href: '' },
-    { image: '/slider/slider-3.jpg', title: 'Hellow 3', desc: '', href: '' },
+    { image: '/slider/slider-1.jpg', title: 'Злови свій потік енергії у Студії Йоги Віньяса', desc: "Динамічні зв'язки віньяси для сили, гнучкості та відмінного настрою на весь день.", href: '' },
+    { image: '/slider/slider-2.jpg', title: 'Гармонія у кожному русі', desc: 'Синхронізуйте дихання та асани на заняттях віньяса-йогою, щоб отримати внутрішній спокій.', href: '' },
+    { image: '/slider/slider-3.jpg', title: 'Вдих. Рух. Перезавантаження.', desc: "Залишіть метушню за дверима студії - м'який і плавний потік віньяси допоможе зняти напругу.", href: '' },
 ]
 
 // Картинка формируется /classes/[slug].jpg
@@ -85,4 +85,13 @@ export const reviewsData = [
     { image: '/review-2.jpg', name: 'Еліза Коллінз', desc: 'Зачарована професіоналізмом інструкторів та гарним дизайном студії. Я знайшла тут не тільки чудові уроки, а й підтримку свого особистого шляху йоги. Дякую, Віньяса' },
     { image: '/review-3.jpg', name: 'Ганна Миронова', desc: 'Дуже вдячна студії "Віньяса" за надихаючі заняття та турботу про кожного учня. Тут я навчилася чути своє тіло і знайшла шлях до внутрішньої рівноваги. Рекомендую всім, хто шукає реальну трансформацію.' },
     { image: '/review-4.jpg', name: 'Ліам Івановський', desc: 'Практика йоги в студії Віньяса стала для мене справжнім відкриттям. Кожне заняття – це можливість відключитися від повсякденної метушні та набути гармонії.' },
+]
+
+export const blogData = [
+    { title: 'Вирушаючи у подорож по йозі. Керівництво для початківців', content: '', category: 'fitness', date: '02/05/26', src: '' },
+    { title: 'Лікування диханням. Роль пранаями у практиці йоги', content: '', category: 'fitness', date: '12/06/26', src: '' },
+    { title: 'Blog 3', content: '', category: 'vinyasa', date: '28/06/26', src: '' },
+    { title: 'Blog 4', content: '', category: 'vinyasa', date: '03/07/26', src: '' },
+    { title: 'Blog 5', content: '', category: 'asanyi', date: '15/07/26', src: '' },
+    { title: 'Blog 6', content: '', category: 'vinyasa', date: '22/09/26', src: '' },
 ]

@@ -25,7 +25,7 @@ const ClasessSlider = () => {
     >
       {classesData.map(item => (
         <SwiperSlide>
-          <Link href={`/classes/${item.slug}`} className='bg-white cursor-pointer overflow-hidden block'>
+          <Link href={`/classes/${item.slug}`} className='bg-white cursor-pointer overflow-hidden block rounded-bdrs-8px'>
             <Image src={item.image} width={500} height={500} alt='' />
             <div className="text-center my-6 font-semibold">{item.title}</div>
           </Link>

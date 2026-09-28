@@ -24,8 +24,8 @@ const InstructorsSlider = () => {
     >
       {instructorsData.map(item => (
         <SwiperSlide>
-          <div className=" bg-section-bg cursor-pointer overflow-hidden">
-            <div className="w-full h-96 overflow-hidden">
+          <div className=" bg-section-bg cursor-pointer overflow-hidden rounded-bdrs-8px">
+            <div className="w-full h-72 overflow-hidden">
               <img src={`/instructors/${item.slug}.jpg`} alt="" className='w-full h-full object-cover scale-100 hover:scale-105 duration-200' />
             </div>
             <div className="py-5 px-12 text-center">

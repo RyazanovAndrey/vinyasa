@@ -15,7 +15,7 @@ export default function Page() {
                 <div className="container">
                     <BreadCrumbs />
                     <div className="grid grid-cols-2 gap-x-12 items-center">
-                        <div className="">
+                        <div className="rounded-bdrs-8px  overflow-hidden">
                             <Image src={'/instructors/instructors.jpg'} width={500} height={500} alt="" />
                         </div>
                         <div className="">

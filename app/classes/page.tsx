@@ -1,7 +1,12 @@
 import BreadCrumbs from "@/components/BreadCrumbs";
 import SectionClasess from "@/partials/SectionClasess";
 import SectionContacts from "@/partials/SectionContacts";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: 'Класи'
+};
 
 export default function Page() {
     return (
@@ -11,7 +16,7 @@ export default function Page() {
                     <BreadCrumbs />
                     <div className="grid grid-cols-2 gap-x-12 items-center">
                         <div className="">
-                            <Image src={'/instructors/instructors.jpg'} width={500} height={500} alt="" />
+                            <Image src={'/instructors/instructors.jpg'} width={500} height={500} alt="" className="rounded-bdrs-8px" />
                         </div>
                         <div className="">
                             <h3 className="text-3xl font-bold">Наші класи</h3>

@@ -31,7 +31,7 @@ function GalleryHome() {
     <div>
       <div className='grid-gallery-home'>
         {images.map((item, index) => (
-          <div className={`image-${index + 1}`}>
+          <div className={`image-${index + 1} rounded-bdrs-8px`}>
             <Image src={item} alt='' onClick={() => openLightboxOnSlide(index + 1)} className='img-home' width={500} height={500} />
           </div>
         ))}
