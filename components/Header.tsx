@@ -25,7 +25,7 @@ const Header = () => {
         <div className="container flex items-center justify-between">
           <div className="flex items-center gap-x-20">
             <Link href={'/'}>
-              <Image src={'/logo-main.png'} alt='' width={150} height={40} />
+              <Image src={'/logo-main-1.png'} alt='' width={150} height={40} />
             </Link>
             <NavMenu />
           </div>
