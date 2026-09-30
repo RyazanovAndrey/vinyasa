@@ -4,6 +4,7 @@ import { RiBubbleChartLine, RiInstagramLine, RiMailLine, RiPhoneLine, RiTelegram
 import { instructorsData } from "@/constants/data"
 import Link from "next/link"
 import SectionContacts from "@/partials/SectionContacts"
+import Image from "next/image"
 
 export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
     const { slug } = await params
@@ -27,10 +28,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             <section className="py-36">
                 <div className="container">
                     <BreadCrumbs />
-                    <div className="grid grid-cols-2 gap-x-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div className="">
                             <div className="w-125 h-150">
-                                <img src={`/instructors/${findData.slug}.jpg`} className="w-full h-full object-cover rounded-bdrs-8px" alt="" />
+                                <Image src={`/instructors/${findData.slug}.jpg`} width={500} height={500} alt="" className="w-full h-full object-cover rounded-bdrs-8px" />
                             </div>
                         </div>
                         <div className="">
@@ -44,7 +45,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 </div>
             </section>
             <section className="bg-top-header text-white p-24">
-                <div className="container grid grid-cols-3 gap-x-5">
+                <div className="container grid grid-cols-1 md:grid-cols-3 gap-5">
                     <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiPhoneLine size={48} />
                         <span className="font-light mt-5">Телефон</span>

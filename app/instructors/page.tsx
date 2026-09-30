@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <section className="py-36">
+            <section className="pt-36">
                 <div className="container">
                     <BreadCrumbs />
-                    <div className="grid grid-cols-2 gap-x-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="rounded-bdrs-8px  overflow-hidden">
                             <Image src={'/instructors/instructors.jpg'} width={500} height={500} alt="" />
                         </div>

@@ -16,7 +16,7 @@ export default function Page() {
             <section className="py-36">
                 <div className="container">
                     <BreadCrumbs />
-                    <div className="grid grid-cols-2 gap-x-5 items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
                         <div className="">
                             <h3 className="text-3xl font-bold mb-10">Йога студія Віньяса</h3>
                             <p className="text-section-content leading-8">Ласкаво просимо до студії "Віньяса" – місце, де зливаються елегантність руху та глибока усвідомленість. Наша студія пропонує унікальний простір для тих, хто прагне гармонії тіла та розуму через мистецтво йоги.</p>
@@ -30,7 +30,7 @@ export default function Page() {
                 </div>
             </section>
             <section className="bg-top-header text-white py-12">
-                <div className="container grid grid-cols-4 gap-x-12">
+                <div className="container grid grid-cols-2 md:grid-cols-4 gap-x-12">
                     <div className="text-center">
                         <div className="text-6xl font-bold">20</div>
                         <div className="">Років досвіду</div>
@@ -50,7 +50,7 @@ export default function Page() {
                 </div>
             </section>
             <section className="py-24">
-                <div className="container grid grid-cols-2 gap-x-12">
+                <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div>
                         <SectionVideo />
                     </div>
@@ -65,14 +65,6 @@ export default function Page() {
                         </p>
                     </div>
                 </div>
-                {/* <div className="container grid place-items-center ">
-                    <p className="heading-8">
-                        Віньяса – це медитація у русі. Включай це відео, щоб розім'яти тіло, розігнати енергію і скинути весь стрес, що накопичився через усвідомлене дихання. Кожна асана - це продовження твого вдиху і видиху. Рушайся плавно, відчувай силу свого тіла і насолоджуйся моментом «тут і зараз». Погнали?
-                    </p>
-                </div>
-                <div className="">
-                    <SectionVideo />
-                </div> */}
             </section>
             <SectionClasess />
             <SectionInstructors />

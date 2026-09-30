@@ -8,7 +8,7 @@ interface Props {
 
 const MobileMenu = ({ isOpen, closeMenu }: Props) => {
   return (
-    <div className={`absolute top-full left-0 bg-white w-full ${isOpen ? 'block' : 'hidden'}`}>
+    <div className={`absolute top-full left-0 bg-white w-full shadow-lg ${isOpen ? 'block' : 'hidden'}`}>
       {navLinks.map(item => (
         <Link href={item.href} onClick={closeMenu} className="block p-5">{item.title}</Link>
       ))}
