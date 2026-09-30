@@ -20,10 +20,10 @@ export default function HomeSlider() {
     <>
       <Swiper
         effect={'fade'}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         navigation
         pagination={{
           clickable: true,
