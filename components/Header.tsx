@@ -8,15 +8,15 @@ const Header = () => {
   return (
     <header className="fixed w-full top-0 left-0 z-999 bg-white border-b border-gray-200">
 
-      <div className="bg-top-header text-white py-2">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 items-center justify-between text-sm gap-2">
+      <div className="bg-top-header text-white py-2 text-sm">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
           <div className="flex gap-x-5">
-            <span className='flex items-center gap-x-3'><RiTimeLine size={16} />Пн-Пт з 10:00 до 19:00</span>
-            <span className='flex items-center gap-x-3'><RiMailLine size={16} />vinyasa@gmail.com</span>
+            <span className='flex items-center gap-x-3 text-[12px] md:text-[14px]'><RiTimeLine size={16} />Пн-Пт з 10:00 до 19:00</span>
+            <span className='flex items-center gap-x-3 text-[12px] md:text-[14px]'><RiMailLine size={16} />vinyasa@gmail.com</span>
           </div>
-          <div className="flex gap-x-5">
-            <span className='flex items-center gap-x-3'><RiPhoneLine size={16} />+38 (099) 365-44-89</span>
-            <span className='flex items-center gap-x-3'><RiMapPinLine size={16} />вул. Пилипа Орлика, 18, м. Полтава</span>
+          <div className="flex gap-x-5 lg:justify-end">
+            <span className='flex items-center gap-x-3 text-[12px] md:text-[14px]'><RiPhoneLine size={16} />+38 (099) 365-44-89</span>
+            <span className='flex items-center gap-x-3 text-[12px] md:text-[14px]'><RiMapPinLine size={16} />вул. Пилипа Орлика, 18, м. Полтава</span>
           </div>
         </div>
       </div>
