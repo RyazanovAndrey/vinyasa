@@ -2,6 +2,7 @@ import BreadCrumbs from "@/components/BreadCrumbs";
 import Link from "next/link";
 import { blogData } from "@/constants/data";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: 'Блог'
@@ -28,11 +29,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                     <div className="grid grid-cols-2 gap-5">
                         {sortDataBlog.map(item => (
                             <div className="bg-gray-100 mb-2 rounded-bdrs-8px overflow-hidden">
-                                {item.src ? <img src={item.src} alt="" /> : <div className="bg-gray-500 h-48"></div>}
+                                {item.src ? <Image src={item.src} width={500} height={500} alt="" /> : <div className="bg-gray-500 h-48"></div>}
                                 <div className="p-5">
                                     <div className="text-sm">{item.date}</div>
                                     <div className="my-2 text-lg">{item.title}</div>
-                                    <p className="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet commodi necessitatibus est, ducimus ab dignissimos laudantium iste voluptatem dolor beatae vitae eligendi. Nostrum odit incidunt rerum a. Eligendi modi tenetur repellendus aut soluta aspernatur! Voluptatem, harum magni cupiditate blanditiis minima sit repudiandae iure asperiores, eius laudantium corporis praesentium consequatur.</p>
+                                    <p className="text-gray-500">{item.content.slice(0, 100) + '...'}</p>
                                 </div>
                             </div>
                         ))}
