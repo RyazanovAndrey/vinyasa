@@ -11,7 +11,7 @@ function SectionVideo() {
 
   return (
     <div>
-      <button onClick={() => setToggler(!toggler)} className="relative grid place-items-center cursor-pointer">
+      <button onClick={() => setToggler(!toggler)} className="relative grid place-items-center cursor-pointer rounded-bdrs-8px overflow-hidden">
         <Play className="absolute z-50" color="white" size={128} />
         <div className="bg-black/50 absolute inset-0"></div>
         <Image src={'/gallery/gallery-4.jpg'} width={700} height={500} alt="" />

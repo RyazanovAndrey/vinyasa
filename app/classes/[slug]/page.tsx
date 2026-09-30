@@ -23,7 +23,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <section className="pt-36">
             <div className="container">
                 <BreadCrumbs />
-                <div className="grid grid-cols-[300px_1fr] gap-x-12">
+                <div className="grid grid-cols-[1fr_4fr] gap-x-12">
                     <ClassesMenu slug={slug} />
                     <div>
                         <div className="w-full h-100 rounded-bdrs-8px overflow-hidden">

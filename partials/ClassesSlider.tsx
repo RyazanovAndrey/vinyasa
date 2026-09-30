@@ -37,7 +37,9 @@ const ClasessSlider = () => {
       {classesData.map(item => (
         <SwiperSlide>
           <Link href={`/classes/${item.slug}`} className='bg-white cursor-pointer overflow-hidden block rounded-bdrs-8px'>
-            <Image src={item.image} width={500} height={500} alt='' />
+          <div className="overflow-hidden">
+            <Image src={item.image} width={500} height={500} alt='' className='scale-100 hover:scale-105 duration-200' />
+          </div>
             <div className="text-center my-6 font-semibold">{item.title}</div>
           </Link>
         </SwiperSlide>

@@ -5,7 +5,7 @@ const ReviewsSection = () => {
   return (
     <>
       {reviewsData.map(item => (
-        <div className="bg-white cursor-pointer rounded-bdrs-8px overflow-hidden">
+        <div className="bg-white relative top-0 cursor-pointer rounded-bdrs-8px overflow-hidden hover:shadow-2xl hover:-top-1 duration-200">
           <Image src={item.image} width={500} height={500} alt="" className="w-full" />
           <div className="py-5 px-12 text-center">
             <div className="font-semibold pb-3">{item.name}</div>

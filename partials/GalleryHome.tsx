@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import Image from 'next/image';
+import { RiSearchLine } from '@remixicon/react';
 
 const images = [
   '/gallery/gallery-1.jpg',
@@ -31,7 +32,13 @@ function GalleryHome() {
     <div>
       <div className='grid-gallery-home'>
         {images.map((item, index) => (
-          <div className={`image-${index + 1} rounded-bdrs-8px`}>
+          <div className={`image-${index + 1} rounded-bdrs-8px relative group`}>
+            <div className="bg-black/60 absolute inset-0 grid place-items-center pointer-events-none opacity-0 group-hover:opacity-100 duration-500">
+              <div className='flex items-center flex-col'>
+                <RiSearchLine color='white' size={32} />
+                <span className='text-white'>Збільшити</span>
+              </div>
+            </div>
             <Image src={item} alt='' onClick={() => openLightboxOnSlide(index + 1)} className='img-home' width={500} height={500} />
           </div>
         ))}

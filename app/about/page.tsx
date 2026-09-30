@@ -24,7 +24,7 @@ export default function Page() {
                             <ButtonCustom color="blue" title="Дивитись відео" width="inline-block" />
                         </div>
                         <div className="flex justify-end">
-                            <Image src={'/about-1.jpg'} width={400} height={500} alt="" />
+                            <Image src={'/about-1.jpg'} width={400} height={500} alt="" className="rounded-bdrs-8px" />
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export default function Page() {
             </section>
             <section className="py-24">
                 <div className="container grid grid-cols-2 gap-x-12">
-                    <div className="">
+                    <div>
                         <SectionVideo />
                     </div>
                     <div className="">

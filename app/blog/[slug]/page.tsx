@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
 
     const sortData = [
-        { href: '/blog/all', title: 'Всі', slug: 'all' },
+        { href: '/blog/all', title: 'Всі категорії', slug: 'all' },
         { href: '/blog/fitness', title: 'Фітнес', slug: 'fitness' },
         { href: '/blog/vinyasa', title: 'Віньяса', slug: 'vinyasa' },
         { href: '/blog/asanyi', title: 'Асани', slug: 'asanyi' },
@@ -25,7 +25,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <section className="py-36">
             <div className="container">
                 <BreadCrumbs />
-                <div className="grid grid-cols-[1fr_300px] gap-x-5">
+                <div className="grid grid-cols-[4fr_1fr] gap-x-12">
                     <div className="grid grid-cols-2 gap-5">
                         {sortDataBlog.map(item => (
                             <div className="bg-gray-100 mb-2 rounded-bdrs-8px overflow-hidden">
@@ -39,10 +39,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                         ))}
                     </div>
                     <div>
-                        <div className="bg-[#EEEEEE] rounded-bdrs-8px overflow-hidden">
+                        <div className="rounded-bdrs-8px overflow-hidden">
                             <div className="text-xl p-3">Категорії</div>
                             {sortData.map(item => {
-                                return <Link href={item.href} className={`p-3 block ${item.slug == slug ? 'bg-primary text-white' : ''}`}>{item.title}</Link>
+                                return <Link href={item.href} className={`py-2 px-3 block border-l-2 border-gray-100  duration-200 ${item.slug == slug ? 'text-primary border-l-2 border-primary' : 'text-gray-500'}`}>{item.title}</Link>
                             })}
                         </div>
                     </div>

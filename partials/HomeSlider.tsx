@@ -28,7 +28,7 @@ export default function HomeSlider() {
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay]}
         loop
         className='mt-24'
       >
@@ -37,7 +37,7 @@ export default function HomeSlider() {
             <div style={{ backgroundImage: `url("${item.image}")` }} className='min-h-150'>
               <div className="container flex items-center min-h-150">
                 <div className="max-w-150 space-y-5">
-                  <h1 className='text-5xl leading-16'>{item.title}</h1>
+                  <h1 className='text-[clamp(1rem,6vw,3rem)] md:leading-16'>{item.title}</h1>
                   <p className='max-w-100'>{item.desc}</p>
                   <Link href={'/classes'} className='inline-block border py-3 px-12 rounded-bdrs-8px'>До класів</Link>
                 </div>
