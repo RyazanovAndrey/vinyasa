@@ -7,7 +7,6 @@ export const metadata: Metadata = {
     title: 'Інструктори | Віньяса-йога, заняття для початківців'
 };
 
-
 export default function Page() {
     return (
         <>

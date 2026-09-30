@@ -6,7 +6,7 @@ const ClassesMenu = ({ slug }: { slug: string }) => {
 
   return (
     <div className="">
-      <div className="max-w-64">
+      <div className="md:max-w-64 mb-12">
         {classesData.map(item => (
           <Link href={item.slug} className={`py-2 px-3 block border-l-2 border-gray-100  duration-200 ${item.slug == slug ? 'text-primary border-l-2 border-primary' : 'text-gray-500'}`}>{item.title}</Link>
         ))}

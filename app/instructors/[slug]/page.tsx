@@ -28,13 +28,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             <section className="py-36">
                 <div className="container">
                     <BreadCrumbs />
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <div className="">
-                            <div className="w-125 h-150">
-                                <Image src={`/instructors/${findData.slug}.jpg`} width={500} height={500} alt="" className="w-full h-full object-cover rounded-bdrs-8px" />
-                            </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div>
+                            <Image src={`/instructors/${findData.slug}.jpg`} width={500} height={500} alt="" className="rounded-bdrs-8px object-cover" />
                         </div>
-                        <div className="">
+                        <div>
                             <h3 className="text-3xl font-bold">{findData.name}</h3>
                             <p className="leading-8 text-section-content my-8">Вітаю. Мене звуть {findData.name}, я інструктор йоги з {findData.direction}. </p>
                             <p className="my-8 leading-8 text-section-content">Моя любов до йоги почалася як особисте відкриття і стала невід'ємною частиною мого життя. З кожним уроком я прагну ділитися не тільки фізичними аспектами йоги, але й допомагати вам набути внутрішнього спокою та рівноваги.</p>
@@ -49,17 +47,17 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                     <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiPhoneLine size={48} />
                         <span className="font-light mt-5">Телефон</span>
-                        <span className="font-bold text-2xl">{findData.contacts.tel}</span>
+                        <span className="font-bold lg:text-2xl">{findData.contacts.tel}</span>
                     </div>
                     <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiMailLine size={48} />
                         <span className="font-light mt-5">Email</span>
-                        <span className="font-bold text-2xl">{findData.contacts.email}</span>
+                        <span className="font-bold lg:text-2xl">{findData.contacts.email}</span>
                     </div>
                     <div className="border p-5 grid place-items-center rounded-bdrs-8px">
                         <RiBubbleChartLine size={48} />
                         <span className="font-light mt-5">Соціальні мережі</span>
-                        <div className="flex gap-x-5 font-bold text-2xl">
+                        <div className="flex gap-x-5 font-bold lg:text-2xl">
                             <Link href={findData.contacts.socials[0] || ''}>
                                 <RiTelegram2Line size={32} className="cursor-pointer" />
                             </Link>

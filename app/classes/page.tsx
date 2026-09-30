@@ -14,7 +14,7 @@ export default function Page() {
             <section className="py-36">
                 <div className="container">
                     <BreadCrumbs />
-                    <div className="grid grid-cols-2 gap-x-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="">
                             <Image src={'/gallery/gallery-4.jpg'} width={600} height={600} alt="" className="rounded-bdrs-8px" />
                         </div>

@@ -23,10 +23,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <section className="pt-36">
             <div className="container">
                 <BreadCrumbs />
-                <div className="grid grid-cols-[1fr_4fr] gap-x-12">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-x-12">
                     <ClassesMenu slug={slug} />
                     <div>
-                        <div className="w-full h-100 rounded-bdrs-8px overflow-hidden">
+                        <div className="md:w-full md:h-100 rounded-bdrs-8px overflow-hidden">
                             <Image src={`/classes/${slug}.jpg`} width={1200} height={500} alt="" className="" />
                         </div>
                         <div className="text-2xl font-bold my-5">{findData.title}</div>

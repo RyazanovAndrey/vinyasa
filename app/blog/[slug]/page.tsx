@@ -24,8 +24,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <section className="py-36">
             <div className="container">
                 <BreadCrumbs />
-                <div className="grid grid-cols-[4fr_1fr] gap-x-12">
-                    <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-x-12">
+                    <div className="grid md:grid-cols-2 gap-5 order-2 md:order-1">
                         {sortDataBlog.map(item => (
                             <div className="bg-gray-100 mb-2 rounded-bdrs-8px overflow-hidden">
                                 {item.src ? <Image src={item.src} width={500} height={500} alt="" /> : <div className="bg-gray-500 h-48"></div>}
@@ -37,13 +37,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                             </div>
                         ))}
                     </div>
-                    <div>
-                        <div className="rounded-bdrs-8px overflow-hidden">
-                            <div className="text-xl p-3">Категорії</div>
-                            {sortData.map(item => {
-                                return <Link href={item.href} className={`py-2 px-3 block border-l-2 border-gray-100  duration-200 ${item.slug == slug ? 'text-primary border-l-2 border-primary' : 'text-gray-500'}`}>{item.title}</Link>
-                            })}
-                        </div>
+                    <div className="order-1 md:order-2">
+                        <div className="text-xl p-3">Категорії</div>
+                        {sortData.map(item => {
+                            return <Link href={item.href} className={`py-2 px-3 block border-l-2 border-gray-100  duration-200 ${item.slug == slug ? 'text-primary border-l-2 border-primary' : 'text-gray-500'}`}>{item.title}</Link>
+                        })}
                     </div>
                 </div>
             </div>
