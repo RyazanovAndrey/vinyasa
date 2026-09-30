@@ -1,13 +1,18 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import NavMenu from './NavMenu';
-import { RiMailLine, RiMapPinLine, RiMenuLine, RiPhoneLine, RiTimeLine } from '@remixicon/react';
+import MobileMenu from './MobileMenu';
+import { RiCloseLargeLine, RiMailLine, RiMapPinLine, RiMenuLine, RiPhoneLine, RiTimeLine } from '@remixicon/react';
 import ButtonCustom from './ButtonCustom';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="fixed w-full top-0 left-0 z-999 bg-white border-b border-gray-200">
-
       <div className="bg-top-header text-white py-2 text-sm">
         <div className="container grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
           <div className="flex gap-x-5">
@@ -22,17 +27,23 @@ const Header = () => {
       </div>
 
       <div className='my-2'>
-        <div className="container flex items-center justify-between">
+        <div className="container flex items-center justify-between gap-x-4">
           <div className="flex items-center gap-x-20">
             <Link href={'/'}>
               <Image src={'/logo-main-1.png'} alt='' width={150} height={40} />
             </Link>
             <NavMenu />
           </div>
-          <div className="bg-primary p-2 rounded-bdrs-8px lg:hidden"><RiMenuLine color='white' /></div>
+
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-primary p-2 rounded-bdrs-8px transition hover:opacity-90 lg:hidden">
+            {isMenuOpen ? <RiCloseLargeLine color='white' size={22} /> : <RiMenuLine color='white' size={22} />}
+          </button>
+
           <ButtonCustom link="/" color="blue" title="Записатись" width='inline-block' />
         </div>
       </div>
+
+      <MobileMenu isOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
     </header>
   )
 }

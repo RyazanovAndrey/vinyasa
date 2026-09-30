@@ -1,9 +1,17 @@
 import { navLinks } from "@/constants/data"
+import Link from "next/link"
 
-const MobileMenu = () => {
+interface Props {
+  isOpen: boolean,
+  closeMenu: () => void
+}
+
+const MobileMenu = ({ isOpen, closeMenu }: Props) => {
   return (
-    <div className="">
-      MobileMenu
+    <div className={`absolute top-full left-0 bg-white w-full ${isOpen ? 'block' : 'hidden'}`}>
+      {navLinks.map(item => (
+        <Link href={item.href} onClick={closeMenu} className="block p-5">{item.title}</Link>
+      ))}
     </div>
   )
 }
